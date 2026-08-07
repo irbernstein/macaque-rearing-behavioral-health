@@ -140,8 +140,6 @@ configuration (significant negative predictor, AIC 452).
 subjects, number of sedation events during year 1 is a significant
 positive predictor of SIB (AIC 451, marginal R² = 0.10).
 
-**Combined model:**
-
 ------------------------------------------------------------------------
 
 ## Methods Notes
