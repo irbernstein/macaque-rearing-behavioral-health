@@ -1,9 +1,3 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 # Rearing Conditions and Behavioral Health Outcomes in Captive Rhesus Macaques
 
 ## Overview
