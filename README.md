@@ -64,7 +64,8 @@ macaque-rearing-behavioral-health/
 │   ├── 02_cagemates_year1.R             # Pull and summarize cagemate history by type — year 1
 │   ├── 03_housing.R                     # Pull and summarize housing type by age window
 │   ├── 04_data_aggregation_and_plots.R  # Join all datasets; exploratory plots
-│   └── 05_SIB_analysis.R               # Mixed-effects logistic regression models
+│   ├── 05_SIB_analysis.R               # Mixed-effects logistic regression models
+│   └── 06_publication_and_predictive_plots.R  # Publication-ready plots and model predictions
 ├── data/                                # Data directory (not included — see below)
 └── README.md
 ```
@@ -105,6 +106,7 @@ server URLs have been replaced with `[ONPRC PRIMe LabKey URL]` and
 | 03_housing | Subject list, EHR, room_categories.xlsx | data/housing_first_3_years.xlsx | Days in each housing type by age window |
 | 04_data_aggregation_and_plots | All above outputs + SIB_obs.xlsx, sedation_summary.csv | data/full_data_wide.csv | Joined wide-format analytic dataset; exploratory plots |
 | 05_SIB_analysis | data/full_data_wide.csv | — | GLMM models predicting SIB outcome |
+| 06_publication_and_predictive_plots | data/full_data_wide.csv, data/full_data_long.csv | figures/ | Publication-ready descriptive plots and model-predicted probability curves |
 
 ------------------------------------------------------------------------
 
@@ -194,6 +196,9 @@ days in caging.
 -   **Rlabkey** — LabKey EHR API queries
 -   **readxl / openxlsx** — Excel file I/O
 -   **janitor** — column name standardization
+-   **ggeffects** — model-predicted values and marginal effects
+-   **patchwork** — combining multiple ggplot2 panels
+-   **broom.mixed** — tidying mixed model outputs
 
 ------------------------------------------------------------------------
 
